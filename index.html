@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -558,8 +558,7 @@
         </div>
 
         <div class="join-block">
-          <h2 class="join-title">приєднуйтесь</h2>
-
+         <p class="join-title">приєднуйтесь</p>
           <ul class="join list">
             <li class="join-item">
               <a
@@ -623,6 +622,18 @@
             </li>
           </ul>
         </div>
+
+        <div class="subscription-block">
+          <p class="subscription-header">Підпишіться на розсилку</p>
+          <div class="subscription-title">
+            <input class="subscription-input" type="email" name="subscription-email" placeholder="E-mail">
+            <button class="subscription-btn" type="button">Підписатися
+              <svg class="subscription-icon" width="24" height="24">
+                <use href="./images/icons.svg/icon-send-telegram.svg#icon-icon-send-telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
 
@@ -636,8 +647,61 @@
             ></use>
           </svg>
         </button>
+        <form name="client-form" class="modal-form-group">
+          <h3 class="modal__header list">Залиште свої данні, ми вам передзвонимо</h3>
+
+          <label class="modal-form">
+              <span class="modal-form__form-name">Ім'я</span>
+              <div class="modal-form__input-wrap">
+                  <input type="text" class="modal-form__form-input" name="user-name">
+                  <svg width="18" height="18" class="modal-form__input-icon">
+                      <use href="./images/modal.icon/modal-symbol.svg#icon-person-black-18dp-1"></use>
+                  </svg>
+              </div>
+          </label>
+         
+          <label class="modal-form">
+              <span class="modal-form__form-name">Телефон</span>
+              <div class="modal-form__input-wrap">
+                  <input type="tel" class="modal-form__form-input" name="user-phone">
+                  <svg width="18" height="18" class="modal-form__input-icon">
+                      <use href="./images/modal.icon/modal-symbol.svg#icon-phone-black-18dp-1"></use>
+                  </svg>
+              </div>
+          </label>
+          
+          <label class="modal-form">
+              <span class="modal-form__form-name">Пошта</span>
+              <div class="modal-form__input-wrap">
+                  <input type="email" class="modal-form__form-input" name="user-email"> 
+                  <svg width="18" height="18" class="modal-form__input-icon">
+                      <use href="./images/modal.icon/modal-symbol.svg#icon-email-black-18dp-1"></use>
+                  </svg>
+              </div>
+          </label>
+          
+          <label class="modal-form">
+              <span class="modal-form__form-name">Коментар</span>
+              <div class="modal-form__input-wrap">
+                  <textarea class="modal-form__feedback" name="user-feedback" rows="10" placeholder="Введіть текст"></textarea>
+              </div>
+          </label>
+          <label class="modal-agreement">
+              <input type="checkbox" class="checkbox hidden" value="accept-policy" name="user-agreement">
+              <svg class="checkbox-icon" width="16" height="15">
+                  <use class="checkbox-icon_uncheck" href="./images/modal.icon/modal-symbol.svg#icon-Vector"></use>
+                  <use class="checkbox-icon_check" href="./images/modal.icon/icon-check.svg#icon-icon-check"></use>
+                </svg>
+              <span class="agreement-text">
+                  Погоджуюся з розсилкою та приймаю
+                  <a href="-" class="agreement-text-link">Умови договору</a>
+              </span>
+          </label>
+      </form>
+      <button class="modal-submit-btn" type="submit">Відправити</button>
       </div>
     </div>
+  </div>
 
     <script src="./modal.js"></script>
   </body>
