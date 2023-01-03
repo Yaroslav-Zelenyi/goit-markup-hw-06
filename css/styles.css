@@ -883,6 +883,7 @@ margin-right: auto;
  margin-bottom: 10px;
 }
 .form-name {
+ display: block;
  font-size: 12px;
  line-height: 1.16;
  letter-spacing: 0.01em;
@@ -948,6 +949,7 @@ margin-right: auto;
  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
  outline: transparent;
  resize: none;
+ margin-bottom: 10px;
 }
 .form-feedback::-moz-placeholder {
  font-size: 12px; 
