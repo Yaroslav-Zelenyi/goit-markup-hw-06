@@ -801,6 +801,7 @@ margin-right: auto;
  display: flex;
  align-items: center;
  justify-content: center;
+ cursor: pointer;
 
  background-color: #FFFFFF;
 
@@ -809,9 +810,14 @@ margin-right: auto;
 }
 .modal-btn-icon {
  fill: #000000;
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn-icon:hover,
-.modal-btn-icon:focus {
+/* .modal-btn-icon:focus,
+.modal-btn-icon:hover {
+ fill: var(--accent-color);
+} */
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon{
  fill: var(--accent-color);
 }
 
@@ -972,7 +978,7 @@ margin-right: auto;
 .form-feedback:hover {
  border: 1px solid var(--accent-color);
 }
-.mform-feedback:focus {
+.form-feedback:focus {
  border: 1px solid var(--accent-color);
 }
   
